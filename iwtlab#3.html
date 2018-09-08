@@ -1,0 +1,107 @@
+<html>
+    
+    
+    <head>
+    <title>
+        
+       Table intro 
+        
+        </title>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        
+        <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+               $("#table1").fadeToggle(100,function(){
+                   $("#table2").toggle();
+               }); 
+                
+            });
+            
+            
+        });
+        
+        
+        </script>
+        <style>
+        table,th,td{
+            border:1px solid blue;
+            border-collapse: collapse;
+        }
+        th,td{padding:15px;}
+        th{text-align: left;}
+        
+        </style>
+    </head>
+    <body>
+    <table width="350px" id="table1" style="position: relative">
+        <tr>
+        <th>First Name</th>
+            <th>Last name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+        <td>Navneet</td>
+            <td>chaurasia</td>
+            <td>19</td>
+        </tr>
+        <tr>
+        <td>Satyam</td>
+            <td>chaurasia</td>
+            <td>21</td>
+        </tr>
+        <tr>
+        <td>mohit</td>
+            <td>chaurasia</td>
+            <td>50</td>
+        </tr>
+        <tr>
+        <td>vishal</td>
+            <td>chaurasia</td>
+            <td>25</td>
+        </tr>
+        <tr>
+        <td>mohan</td>
+            <td>chaurasia</td>
+            <td>65</td>
+        </tr>
+        
+        </table>
+        
+        <table>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+            </tr>
+            <tr>
+            <td>Navneet</td>
+                <td>12345</td>
+                <td>235746</td>
+            </tr>
+        
+        
+        </table>
+        <button class="btn btn-primary btn-lg" id="btn" style="position: absolute;right:0px">Click</button>
+        
+        
+        <table id="table2">
+        <tr>
+            <th>Name</th>
+            <td>Navneet</td>
+            </tr>
+            <tr>
+            <th rowspan="2">Telephone</th>
+                <td>123456</td>
+            </tr>
+            <tr>
+            <td>12345686</td></tr>
+            
+        
+        </table>
+    
+    </body>
+</html>
